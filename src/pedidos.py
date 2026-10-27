@@ -1,4 +1,10 @@
-"""Calculo de totales de pedidos (version refactorizada)."""
+"""Calculo de totales de pedidos
+
+Version refactorizada: los descuentos por categoria, los cupones y los
+impuestos por pais estan en tablas de datos, y calcular_total solo los
+combina. Reemplaza a la funcion original de legacy.py, con los mismos
+resultados.
+"""
 
 DESCUENTOS = {
     "libros": {"premium": 0.15, "regular": 0.05},
